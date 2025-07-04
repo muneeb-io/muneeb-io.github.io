@@ -3,52 +3,77 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f7f9fc;
-    color: #333;
+    color: #1e293b;
+    scroll-behavior: smooth;
 }
 
-header {
-    background-color: #1e293b;
+.hero {
+    background: url('https://images.unsplash.com/photo-1586500052846-d7fbb7d02c4c?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
     color: white;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 6rem 2rem;
+    position: relative;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+.overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 4rem 2rem;
 }
 
-header h2 {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+}
+
+h2 {
     font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 0 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 section {
     padding: 2rem 1rem;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
-}
-
-.intro p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-.services ul {
-    list-style: disc;
-    padding-left: 1.5rem;
 }
 
 .linkedin-button {
     display: inline-block;
+    margin-top: 1rem;
     padding: 0.75rem 1.5rem;
     background-color: #0077b5;
     color: white;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
     border-radius: 5px;
-    margin-top: 1rem;
 }
 
 .linkedin-button:hover {
@@ -57,8 +82,34 @@ section {
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #e2e8f0;
-    font-size: 0.9rem;
-    color: #555;
+}
+
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0077b5;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.chat-widget {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    height: 480px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
