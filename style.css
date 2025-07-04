@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+header {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h2 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.services ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.linkedin-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0077b5;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.linkedin-button:hover {
+    background-color: #005a8c;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e2e8f0;
+    font-size: 0.9rem;
+    color: #555;
+}
